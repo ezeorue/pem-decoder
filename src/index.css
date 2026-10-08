@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 216 100% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 216 100% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 216 100% 15%;
+    --primary: 216 100% 24%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 207 47% 91%;
+    --secondary-foreground: 216 100% 24%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 25% 45%;
+    --accent: 199 100% 43%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 210 30% 88%;
+    --input: 210 30% 88%;
+    --ring: 199 100% 43%;
+    --radius-lg: 0.5rem;
+    --radius-md: 0.375rem;
+    --radius-sm: 0.25rem;
+
+    --celeste: 207 47% 66%;
+    --amarillo: 44 100% 50%;
+    --azul: 199 100% 43%;
+    --azul-oscuro: 216 100% 24%;
+  }
+
+  .dark {
+    --background: 216 100% 11%;
+    --foreground: 0 0% 100%;
+    --card: 216 100% 15%;
+    --card-foreground: 0 0% 100%;
+    --popover: 216 100% 13%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 44 100% 50%;
+    --primary-foreground: 216 100% 15%;
+    --secondary: 216 100% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 216 100% 20%;
+    --muted-foreground: 210 40% 70%;
+    --accent: 199 100% 43%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 216 100% 25%;
+    --input: 216 100% 25%;
+    --ring: 44 100% 50%;
+
+    --celeste: 199 100% 60%;
+    --amarillo: 44 100% 50%;
+    --azul: 199 100% 43%;
+    --azul-oscuro: 216 100% 24%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    margin: 0;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .bg-brand-azul {
+    background-color: hsl(var(--azul));
+  }
+  .bg-brand-oscuro {
+    background-color: hsl(var(--azul-oscuro));
+  }
+  .bg-brand-celeste {
+    background-color: hsl(var(--celeste));
+  }
+  .bg-brand-amarillo {
+    background-color: hsl(var(--amarillo));
+  }
+  .text-brand-azul {
+    color: hsl(var(--azul));
+  }
+  .text-brand-oscuro {
+    color: hsl(var(--azul-oscuro));
+  }
+  .text-brand-celeste {
+    color: hsl(var(--celeste));
+  }
+  .text-brand-amarillo {
+    color: hsl(var(--amarillo));
+  }
+  .border-brand-azul {
+    border-color: hsl(var(--azul));
+  }
+}
+
+.monospace {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    "SF Mono",
+    Menlo,
+    Consolas,
+    "Liberation Mono",
+    monospace;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
